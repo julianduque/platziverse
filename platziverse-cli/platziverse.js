@@ -9,7 +9,11 @@ const contrib = require('blessed-contrib')
 const moment = require('moment')
 const PlatziverseAgent = require('platziverse-agent')
 
-const agent = new PlatziverseAgent()
+const agent = new PlatziverseAgent({
+  mqtt: {
+    host: 'mqtt://api.platziverse.space'
+  }
+})
 const screen = blessed.screen()
 
 const agents = new Map()

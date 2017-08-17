@@ -1,9 +1,9 @@
 const PlatziverseAgent = require('../')
 
 const agent = new PlatziverseAgent({
-  name: 'Node.js Reloaded',
+  name: 'Node.js',
   username: 'admin',
-  interval: 1000,
+  interval: 100,
   mqtt: {
     host: 'mqtt://api.platziverse.space'
   }
